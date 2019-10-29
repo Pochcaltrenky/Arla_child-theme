@@ -1,0 +1,351 @@
+/*
+ Theme Name:   Arla
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Arla Theme
+ Author:       Patrik Melis
+ Author URI:   http://melispatrik.eu
+ Template:     astra
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyfifteenchild
+*/
+
+@font-face {
+	font-family: Arla_W_Bd;
+	src: url("http://austeja.dk/arla/wp-content/themes/astra-child/fonts/ArlaIF_W_Bd.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Arla_W_Lt;
+	src: url("http://austeja.dk/arla/wp-content/themes/astra-child/fonts/ArlaIF_W_Lt.ttf");
+	font-weight: 100;
+}
+
+body {
+    width: 100%;
+	font-family: "Arla_W_Lt", sans-serif;
+}
+
+h1 {
+	font-family: "Arla_W_Bd", sans-serif;
+    color: green;
+    position: fixed;
+}
+
+h2 {
+    font-size: 2.3em;
+	margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1.6em;
+	margin-top: 0em;
+    margin-bottom: 0;
+	margin-top: 0.6em;
+}
+
+h5 {
+	font-family: "Arla_W_Bd", sans-serif;
+	font-weight: 100;
+	float: right;
+	font-size: 1em;
+	margin: 0;
+	margin-top: 0.8em;
+	margin-bottom: 0.4em;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	margin-top: 0.6em;
+}
+
+.description {
+	float: left;
+	font-family: "Arla_W_Lt", sans-serif;
+	font-weight: 100;
+	font-size: 1.4em;
+	margin: 0;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 6em;
+	width: 100%;
+	background-color: #4BB131;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.progressbar {
+	position: fixed;
+	height: 0.8em;
+	width: 80%;
+	margin-left: 10%;
+	background-color: white;
+	box-shadow: inset 0px 0px 4px black;
+	margin-top: 2.6em;
+}
+
+#progressbaryellow {
+	position: fixed;
+	height: 0.8em;
+	width: 0%;
+	margin-left: 10%;
+	background-color: #FFCC32;
+	box-shadow: inset 0px 0px 4px black;
+	margin-top: 2.6em;
+}
+
+.progressnumbers {
+	display: flex;
+	flex-direction: row;
+	width: 81.5%;
+	margin-left: 9.5%;
+	justify-content: space-between;
+	margin-top: 3.6em;
+}
+
+.progressnumber {
+	color: white;
+}
+
+main {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15vh;
+}
+
+.categorysection {
+    float: left;
+    width: 40%;
+}
+
+.categorysection h2 {
+	margin-bottom: 1em;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 5%;
+	cursor: pointer;
+}
+
+#cows {
+    display: block;
+}
+
+#energy {
+    display: none;
+}
+
+#food {
+    display: none;
+}
+
+#fuel {
+    display: none;
+}
+
+.icons {
+    width: 100%;
+}
+
+#submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 15px;
+	border: none;
+    background-color: #d3d3d3;
+    color: #9b9b9b;
+}
+
+.save, .print {
+    font-size: 1.4em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.8em;
+    border-radius: 10px;
+    background-color: #006C3A;
+    color: white;
+	cursor: pointer;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+.questionsection {
+    float: right;
+    width: 57%;
+}
+
+.questions {
+    width: 100%;
+    height: 60vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: scroll;
+	font-family: "Arla_W_Lt", sans-serif;
+	font-weight: 100;
+}
+
+.question {
+    width: 100%;
+    text-align: center;
+}
+
+.done {
+	display: none;
+	float: left;
+	width: 6%;
+	margin-left: 5%;
+	margin-top: -5em;
+}
+
+.edit {
+	display: none;
+	float: right;
+	margin-top: -5.5em;
+	margin-right: 5%;
+	background-color: white;
+	border: 1px solid #006C3A;
+	border-radius: 5px;
+	font-size: 0.7em;
+	cursor: pointer;
+}
+
+.question p {
+    font-size: 1.4em; 
+    margin: 0;
+    margin-top: 0.8em;
+    margin-bottom: 0.3em;
+}
+
+.question input {
+    width: 60%;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 0.8em;
+}
+
+@media only screen and (max-width: 720px) {
+	
+	main {
+		position: absolute;
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	nav {
+		z-index: 99;
+	}
+	
+	h2 {
+		font-size: 2em;
+		margin-top: 0.5em;
+	}
+	
+	.questionsection {
+		float: none;
+		width: 90%;
+		margin-left: 5%;
+	}
+	
+	h5 {
+		display: none;
+	}
+	
+	.questions {
+		height: 53vh;
+		margin-top: 0.5em;
+	}
+	
+	.question input {
+		width: 80%;
+		border: 1px solid grey;
+	}
+	
+	.question p {
+		width: 90%;
+		margin-left: 5%;
+	}
+	
+	.done {
+		width: 10%;
+		margin-top: -6.5em;
+	}
+	
+	.edit {
+		margin-top: -8.5em;
+	}
+	
+	.print {
+		display: none;
+	}
+	
+	.categorysection {
+		float: none;
+		position: fixed;
+		width: 100%;
+		margin: 0;
+		left: 0;
+		bottom: 0;
+		background-color: white;
+		border-top: 1px solid #006C3A;
+	}
+	
+	.categorysection h2 {
+		margin: 0;
+		display: none;
+	}
+	
+	.categories {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 90%;
+		margin-left: 5%;
+		justify-content: space-around;
+		margin-right: 0;
+		margin-bottom: 0.5em;
+		margin-top: 0.5em;
+	}
+	
+	.category {
+		width: 20%;
+		margin: 0;
+	}
+	
+	#submit {
+		position: absolute;
+		display: none;
+		width: 50%;
+		margin-left: 25%;
+		margin-top: -5em;
+	}
+}
